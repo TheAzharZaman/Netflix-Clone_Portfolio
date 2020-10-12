@@ -8,7 +8,6 @@
   padding: 15px;
   transition: all 0.45s;
   transition-timing-function: ease-in;
-  background-color: transparent;
 }
 
 .Netflix__logo {
@@ -26,10 +25,4 @@
   &:active {
     transform: scale(0.97);
   }
-}
-
-// Black Mode
-
-.Nav__black {
-  background-color: #111;
 }

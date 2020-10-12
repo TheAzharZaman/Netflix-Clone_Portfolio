@@ -1,8 +1,6 @@
 @import "./generic";
 @import "./row";
+@import "./color";
 @import "./banner";
 @import "./navbar";
-
-.App-Main-UI-Container {
-  background-color: #111;
-}
+@import "./reponsiveness/responsiveness";
