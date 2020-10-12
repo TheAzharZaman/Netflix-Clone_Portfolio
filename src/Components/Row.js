@@ -20,7 +20,7 @@ const Row = ({ title, fetchURL, isVerticalAndLargeRow, Row_id }) => {
     }, [fetchURL])
 
     const opts= {
-        height: '390',
+        height: '400',
         width: '100%',
         playvars: {     
             autoplay: 1,
@@ -53,8 +53,9 @@ const Row = ({ title, fetchURL, isVerticalAndLargeRow, Row_id }) => {
                     <img key={movie.id} onClick= {() => clickHandler(movie)} className={`Row__poster ${isVerticalAndLargeRow && 'Large__poster'}`} src={`${base_url}${ isVerticalAndLargeRow ? movie.poster_path : movie.backdrop_path }`} alt={movie.name} />
                 ))}
             </div>
-            
-            {trailerUrl && < Youtube videoId= {trailerUrl} opts= {opts} />}
+                <div className='Youtube__embed__container'>
+                     {trailerUrl && < Youtube videoId= {trailerUrl} opts= {opts} />}
+                 </div>
         </div>
     )
 }

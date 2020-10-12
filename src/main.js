@@ -24,10 +24,9 @@ function RootApp() {
           <Row title='Horror Films' Row_id='Row__horror__films' fetchURL={requests.fetchHorrorMovies} />
           <Row title='Romantic Movies' Row_id='Row__romantic__movies' fetchURL={requests.fetchRomanticMovies} />
           <Row title='Documentries' Row_id='Row__documentries' fetchURL={requests.fetchDocumentries} />
-          <Row title=' Ancient ' Row_id='Row__documentries' fetchURL={requests.fetchAncient} />
-          <Row title='Documentries 2' Row_id='Row__documentries' fetchURL={requests.fetchUnknown2} />
-    </div>
-  );
+          <Row title=' Ancient ' Row_id='Row__documentries' fetchURL={requests.fetchAncient} />    
+      </div>
+   );
 }
 
 let RootDirectory = document.getElementById('Root')

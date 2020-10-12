@@ -31,7 +31,6 @@ html {
 }
 
 .Row-Title {
-  color: rgba(255, 255, 255, 0.91);
   font-size: 25px;
   letter-spacing: 0.8px;
   margin-left: 1.5rem;
@@ -69,9 +68,46 @@ html {
   margin-top: 1.65rem;
 }
 
+.App-Main-UI-Container {
+  background-color: #111;
+}
+
+.Nav__bar {
+  background-color: transparent;
+}
+
+.Nav__black {
+  background-color: #111;
+}
+
+.Banner {
+  color: #fff;
+}
+
+.Banner__title {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.Banner__btn {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.Banner__btn:hover {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.Banner__description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.Row-Title {
+  color: rgba(255, 255, 255, 0.91);
+}
+
 .Banner {
   height: 460px;
-  color: #fff;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -85,7 +121,6 @@ html {
   font-weight: 38px;
   font-size: 38px;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.95);
   margin-left: 38px;
 }
 
@@ -97,20 +132,13 @@ html {
   padding: 1rem 2rem;
   font-weight: 400;
   font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.35);
   letter-spacing: 0.5px;
   outline: none;
   border: 0.75px solid #fff;
-  color: rgba(255, 255, 255, 0.95);
   margin-top: 1.75rem;
   margin-right: 1rem;
   -webkit-transition: color 0.28s, background-color 0.28s;
   transition: color 0.28s, background-color 0.28s;
-}
-
-.Banner__foreground__content .Banner__btn:hover {
-  background-color: #e50914;
-  color: #fff;
 }
 
 .Banner__foreground__content .Banner__btn:active {
@@ -123,7 +151,6 @@ html {
   letter-spacing: 0.5px;
   font-size: 16.5px;
   margin-top: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
   max-width: 400px;
   width: 68.5rem;
   height: 80px;
@@ -154,7 +181,6 @@ html {
   transition: all 0.45s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
-  background-color: transparent;
 }
 
 .Netflix__logo {
@@ -180,11 +206,228 @@ html {
           transform: scale(0.97);
 }
 
-.Nav__black {
-  background-color: #111;
+@media screen and (min-width: 340px) and (max-width: 400px) {
+  .Netflix__logo {
+    width: 70px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .User__avatar {
+    width: 46px;
+    margin-top: -0.35rem;
+    margin-right: 1.2rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+  }
+  .User__avatar:active {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  .Banner__foreground__content {
+    padding-top: 105px;
+    height: 500px;
+  }
+  .Banner__foreground__content .Banner__title {
+    font-weight: 38px;
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-left: 22px;
+  }
+  .Banner__foreground__content .Banner__btns__wrapper {
+    margin-left: 18px;
+  }
+  .Banner__foreground__content .Banner__btn {
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: 0.75px solid #fff;
+    margin-top: 1.25rem;
+    margin-right: 1rem;
+    -webkit-transition: color 0.28s, background-color 0.28s;
+    transition: color 0.28s, background-color 0.28s;
+  }
+  .Banner__foreground__content .Banner__btn:active {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .Banner__foreground__content .Banner__description {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    margin-top: 1.5rem;
+    max-width: 350px;
+    width: 68.5rem;
+    height: 80px;
+    margin-left: 18px;
+  }
+  .Banner__fade__bottom {
+    height: 16.5rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(31, 31, 31, 0.61)), to(#111));
+    background-image: linear-gradient(180deg, transparent, rgba(31, 31, 31, 0.61), #111);
+  }
+  .Row__posters__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: 0.7rem;
+  }
+  .Row__posters__container::-webkit-scrollbar {
+    display: none;
+  }
+  .Row-Title {
+    font-size: 21px;
+    letter-spacing: 0.8px;
+    margin-left: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+  .Row__poster {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-height: 110px;
+    margin-right: 10px;
+    -webkit-transition: -webkit-transform 450ms;
+    transition: -webkit-transform 450ms;
+    transition: transform 450ms;
+    transition: transform 450ms, -webkit-transform 450ms;
+  }
+  .Row__poster:hover {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  .Large__poster {
+    max-height: 250px;
+  }
+  .Large__poster:hover {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  #Row__netflix__originals {
+    margin-top: 1.65rem;
+  }
 }
 
-.App-Main-UI-Container {
-  background-color: #111;
+@media screen and (min-width: 401px) and (max-width: 455px) {
+  .Netflix__logo {
+    width: 70px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: -0.3rem;
+  }
+  .User__avatar {
+    width: 46px;
+    margin-top: -0.35rem;
+    margin-right: 1rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+  }
+  .User__avatar:active {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  .Banner__foreground__content {
+    padding-top: 105px;
+    height: 500px;
+  }
+  .Banner__foreground__content .Banner__title {
+    font-weight: 38px;
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-left: 22px;
+  }
+  .Banner__foreground__content .Banner__btns__wrapper {
+    margin-left: 18px;
+  }
+  .Banner__foreground__content .Banner__btn {
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: 0.75px solid #fff;
+    margin-top: 1.25rem;
+    margin-right: 1rem;
+    -webkit-transition: color 0.28s, background-color 0.28s;
+    transition: color 0.28s, background-color 0.28s;
+  }
+  .Banner__foreground__content .Banner__btn:active {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .Banner__foreground__content .Banner__description {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 15.85px;
+    margin-top: 1.5rem;
+    max-width: 350px;
+    width: 68.5rem;
+    height: 80px;
+    margin-left: 18px;
+  }
+  .Banner__fade__bottom {
+    height: 16.5rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(31, 31, 31, 0.61)), to(#111));
+    background-image: linear-gradient(180deg, transparent, rgba(31, 31, 31, 0.61), #111);
+  }
+  .Row__posters__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    margin-left: 0.5rem;
+    margin-top: 0.7rem;
+  }
+  .Row__posters__container::-webkit-scrollbar {
+    display: none;
+  }
+  .Row-Title {
+    font-size: 21.5px;
+    letter-spacing: 0.8px;
+    margin-left: 1.25rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+  .Row__poster {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-height: 110px;
+    margin-right: 10px;
+    -webkit-transition: -webkit-transform 450ms;
+    transition: -webkit-transform 450ms;
+    transition: transform 450ms;
+    transition: transform 450ms, -webkit-transform 450ms;
+  }
+  .Row__poster:hover {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  .Large__poster {
+    max-height: 250px;
+  }
+  .Large__poster:hover {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  #Row__netflix__originals {
+    margin-top: 1.65rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
