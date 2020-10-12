@@ -1,53 +1,67 @@
-
-.Banner{
-    height: 448px;
-    color: #fff;
-    object-fit: contain;
+.Banner {
+  height: 460px;
+  color: #fff;
+  object-fit: contain;
 }
 
 .Banner__foreground__content {
-  margin-left: 35px;
-  padding-top: 107px;
-  height: 100px;
+  padding-top: 117.5px;
+  height: 500px;
 
-  .Banner__title{
-    font-weight: 700;
-    font-size: 35px;
+  .Banner__title {
+    font-weight: 38px;
+    font-size: 38px;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.95);
+    margin-left: 38px;
   }
 
-  .Banner__btn{
-      padding: 1rem 2rem;
-      font-weight: 400;
-      font-size: 16px;
-      background-color: transparent;
-      letter-spacing: .5px;
-      outline: none;
-      border: 1px solid #fff;
-      color: #E50914;
-      margin-top: 1.75rem;
-      margin-right: 1rem;
-      transition: color .28s, background-color .28s;
-
-      &:hover{
-          background-color: #E50914;
-          color: #fff;
-      }
-
-      &:active{
-          transform: scale(1.02);
-      }
+  .Banner__btns__wrapper {
+    margin-left: 35px;
   }
 
-  .Banner__description{
-      width: 68.5rem;
-      font-weight: 400;
-      letter-spacing: .5px;
-      font-size: 19.54px;
-      margin-top: 1.75rem;
-      color: rgba(255, 255, 255, 0.9);
+  .Banner__btn {
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgba($color: #000000, $alpha: 0.35);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: 0.75px solid #fff;
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 1.75rem;
+    margin-right: 1rem;
+    transition: color 0.28s, background-color 0.28s;
+
+    &:hover {
+      background-color: #e50914;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(1.02);
+    }
+  }
+
+  .Banner__description {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 16.5px;
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    width: 68.5rem;
+    height: 80px;
+    margin-left: 35px;
   }
 }
 
-
+.Banner__fade__bottom {
+  height: 16rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(31, 31, 31, 0.61),
+    #111
+  );
+}

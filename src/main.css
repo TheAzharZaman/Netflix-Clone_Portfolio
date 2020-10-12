@@ -23,17 +23,27 @@ html {
   overflow-x: scroll;
   padding: 20px;
   margin-left: 17px;
+  margin-top: 0.7rem;
 }
 
 .Row__posters__container::-webkit-scrollbar {
   display: none;
 }
 
+.Row-Title {
+  color: rgba(255, 255, 255, 0.91);
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  margin-left: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
 .Row__poster {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 100px;
+  max-height: 110px;
   margin-right: 10px;
   -webkit-transition: -webkit-transform 450ms;
   transition: -webkit-transform 450ms;
@@ -55,43 +65,51 @@ html {
           transform: scale(1.09);
 }
 
+#Row__netflix__originals {
+  margin-top: 1.65rem;
+}
+
 .Banner {
-  height: 448px;
+  height: 460px;
   color: #fff;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .Banner__foreground__content {
-  margin-left: 35px;
-  padding-top: 107px;
-  height: 100px;
+  padding-top: 117.5px;
+  height: 500px;
 }
 
 .Banner__foreground__content .Banner__title {
-  font-weight: 700;
-  font-size: 35px;
+  font-weight: 38px;
+  font-size: 38px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.95);
+  margin-left: 38px;
+}
+
+.Banner__foreground__content .Banner__btns__wrapper {
+  margin-left: 35px;
 }
 
 .Banner__foreground__content .Banner__btn {
   padding: 1rem 2rem;
   font-weight: 400;
   font-size: 16px;
-  background-color: transparent;
-  letter-spacing: .5px;
+  background-color: rgba(0, 0, 0, 0.35);
+  letter-spacing: 0.5px;
   outline: none;
-  border: 1px solid #fff;
-  color: #E50914;
+  border: 0.75px solid #fff;
+  color: rgba(255, 255, 255, 0.95);
   margin-top: 1.75rem;
   margin-right: 1rem;
-  -webkit-transition: color .28s, background-color .28s;
-  transition: color .28s, background-color .28s;
+  -webkit-transition: color 0.28s, background-color 0.28s;
+  transition: color 0.28s, background-color 0.28s;
 }
 
 .Banner__foreground__content .Banner__btn:hover {
-  background-color: #E50914;
+  background-color: #e50914;
   color: #fff;
 }
 
@@ -101,18 +119,72 @@ html {
 }
 
 .Banner__foreground__content .Banner__description {
-  width: 68.5rem;
   font-weight: 400;
-  letter-spacing: .5px;
-  font-size: 19.54px;
-  margin-top: 1.75rem;
+  letter-spacing: 0.5px;
+  font-size: 16.5px;
+  margin-top: 1.5rem;
   color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  width: 68.5rem;
+  height: 80px;
+  margin-left: 35px;
 }
 
-.Booster {
-  text-align: center;
-  margin-top: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
+.Banner__fade__bottom {
+  height: 16rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(31, 31, 31, 0.61)), to(#111));
+  background-image: linear-gradient(180deg, transparent, rgba(31, 31, 31, 0.61), #111);
+}
+
+.Nav__bar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 1;
+  padding: 15px;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  background-color: transparent;
+}
+
+.Netflix__logo {
+  width: 76px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.User__avatar {
+  width: 52.5px;
+  margin-top: -0.35rem;
+  margin-right: 1.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.User__avatar:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.Nav__black {
+  background-color: #111;
+}
+
+.App-Main-UI-Container {
+  background-color: #111;
 }
 /*# sourceMappingURL=main.css.map */
