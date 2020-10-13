@@ -35,21 +35,21 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function RootApp() {
-          return _react2.default.createElement(
-                    'div',
-                    { className: 'App-Main-UI-Container' },
-                    _react2.default.createElement(_Navbar2.default, null),
-                    _react2.default.createElement(_Banner2.default, null),
-                    _react2.default.createElement(_Row2.default, { title: 'Netflix Originals', Row_id: 'Row__netflix__originals', fetchURL: _requests2.default.fetchNetflixOrignals, isVerticalAndLargeRow: true }),
-                    _react2.default.createElement(_Row2.default, { title: 'Trending Now', Row_id: 'Row__trending__now', fetchURL: _requests2.default.fetchTrending }),
-                    _react2.default.createElement(_Row2.default, { title: 'Top Rated', Row_id: 'Row__top__rated', fetchURL: _requests2.default.fetchTopRated }),
-                    _react2.default.createElement(_Row2.default, { title: 'Action Films', Row_id: 'Row__action__films', fetchURL: _requests2.default.fetchActionMovies }),
-                    _react2.default.createElement(_Row2.default, { title: 'Comedy Films', Row_id: 'Row__comedy__films', fetchURL: _requests2.default.fetchComedyMovies }),
-                    _react2.default.createElement(_Row2.default, { title: 'Horror Films', Row_id: 'Row__horror__films', fetchURL: _requests2.default.fetchHorrorMovies }),
-                    _react2.default.createElement(_Row2.default, { title: 'Romantic Movies', Row_id: 'Row__romantic__movies', fetchURL: _requests2.default.fetchRomanticMovies }),
-                    _react2.default.createElement(_Row2.default, { title: 'Documentries', Row_id: 'Row__documentries', fetchURL: _requests2.default.fetchDocumentries }),
-                    _react2.default.createElement(_Row2.default, { title: ' Ancient ', Row_id: 'Row__documentries', fetchURL: _requests2.default.fetchAncient })
-          );
+  return _react2.default.createElement(
+    'div',
+    { className: 'App-Main-UI-Container', id: 'App-Main-UI-Container' },
+    _react2.default.createElement(_Navbar2.default, null),
+    _react2.default.createElement(_Banner2.default, null),
+    _react2.default.createElement(_Row2.default, { title: 'Netflix Originals', Row_id: 'Row__netflix__originals', fetchURL: _requests2.default.fetchNetflixOrignals, isVerticalAndLargeRow: true }),
+    _react2.default.createElement(_Row2.default, { title: 'Trending Now', Row_id: 'Row__trending__now', fetchURL: _requests2.default.fetchTrending }),
+    _react2.default.createElement(_Row2.default, { title: 'Top Rated', Row_id: 'Row__top__rated', fetchURL: _requests2.default.fetchTopRated }),
+    _react2.default.createElement(_Row2.default, { title: 'Action Films', Row_id: 'Row__action__films', fetchURL: _requests2.default.fetchActionMovies }),
+    _react2.default.createElement(_Row2.default, { title: 'Comedy Films', Row_id: 'Row__comedy__films', fetchURL: _requests2.default.fetchComedyMovies }),
+    _react2.default.createElement(_Row2.default, { title: 'Horror Films', Row_id: 'Row__horror__films', fetchURL: _requests2.default.fetchHorrorMovies }),
+    _react2.default.createElement(_Row2.default, { title: 'Romantic Movies', Row_id: 'Row__romantic__movies', fetchURL: _requests2.default.fetchRomanticMovies }),
+    _react2.default.createElement(_Row2.default, { title: 'Documentries', Row_id: 'Row__documentries', fetchURL: _requests2.default.fetchDocumentries }),
+    _react2.default.createElement(_Row2.default, { title: ' Ancient ', Row_id: 'Row__documentries', fetchURL: _requests2.default.fetchAncient })
+  );
 }
 
 var RootDirectory = document.getElementById('Root');

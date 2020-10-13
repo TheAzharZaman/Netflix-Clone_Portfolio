@@ -48,7 +48,7 @@ const Row = ({ title, fetchURL, isVerticalAndLargeRow, Row_id }) => {
                 {title}
             </h2>
 
-            <div className='Row__posters__container'>
+            <div className='Row__posters__container' id='Row__posters__container'>
                 {movies.map(movie => (
                     <img key={movie.id} onClick= {() => clickHandler(movie)} className={`Row__poster ${isVerticalAndLargeRow && 'Large__poster'}`} src={`${base_url}${ isVerticalAndLargeRow ? movie.poster_path : movie.backdrop_path }`} alt={movie.name} />
                 ))}

@@ -158,9 +158,9 @@ html {
 }
 
 .Banner__fade__bottom {
-  height: 16rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(31, 31, 31, 0.61)), to(#111));
-  background-image: linear-gradient(180deg, transparent, rgba(31, 31, 31, 0.61), #111);
+  height: 15rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(37, 37, 37, 0.61)), to(#111));
+  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
 
 .Nav__bar {
@@ -204,6 +204,21 @@ html {
 .User__avatar:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
+}
+
+.Theme__adjustor {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  -webkit-transition: color 0.2s cursor 0.2s;
+  transition: color 0.2s cursor 0.2s;
+  position: fixed;
+  right: 11.5rem;
+  top: 3rem;
+}
+
+.Theme__adjustor:hover {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 @media screen and (min-width: 340px) and (max-width: 400px) {

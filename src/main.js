@@ -10,12 +10,11 @@ import * as serviceWorker from './serviceWorker';
 
 function RootApp() {
   return (
-    <div className="App-Main-UI-Container">
+    <div className="App-Main-UI-Container" id='App-Main-UI-Container'>
       {/* babel src/main.js --out-file=src/index.js --presets=react,env --watch */}
 
           <Navbar />
           <Banner />
-
           <Row title='Netflix Originals' Row_id='Row__netflix__originals' fetchURL={requests.fetchNetflixOrignals} isVerticalAndLargeRow />
           <Row title='Trending Now' Row_id='Row__trending__now' fetchURL={requests.fetchTrending}  />
           <Row title='Top Rated' Row_id='Row__top__rated' fetchURL={requests.fetchTopRated} />

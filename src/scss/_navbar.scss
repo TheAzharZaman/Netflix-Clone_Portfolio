@@ -26,3 +26,17 @@
     transform: scale(0.97);
   }
 }
+
+.Theme__adjustor {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  transition: color 0.2s cursor 0.2s;
+  position: fixed;
+  right: 11.5rem;
+  top: 3rem;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
