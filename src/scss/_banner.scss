@@ -1,0 +1,53 @@
+
+.Banner{
+    height: 448px;
+    color: #fff;
+    object-fit: contain;
+}
+
+.Banner__foreground__content {
+  margin-left: 35px;
+  padding-top: 107px;
+  height: 100px;
+
+  .Banner__title{
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .Banner__btn{
+      padding: 1rem 2rem;
+      font-weight: 400;
+      font-size: 16px;
+      background-color: transparent;
+      letter-spacing: .5px;
+      outline: none;
+      border: 1px solid #fff;
+      color: #E50914;
+      margin-top: 1.75rem;
+      margin-right: 1rem;
+      transition: color .28s, background-color .28s;
+
+      &:hover{
+          background-color: #E50914;
+          color: #fff;
+      }
+
+      &:active{
+          transform: scale(1.02);
+      }
+  }
+
+  .Banner__description{
+      width: 68.5rem;
+      font-weight: 400;
+      letter-spacing: .5px;
+      font-size: 19.54px;
+      margin-top: 1.75rem;
+      color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+

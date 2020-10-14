@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -14,10 +15,104 @@ html {
   cursor: pointer;
 }
 
+.Row__posters__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  margin-left: 17px;
+}
+
+.Row__posters__container::-webkit-scrollbar {
+  display: none;
+}
+
+.Row__poster {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
+}
+
+.Row__poster:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.Large__poster {
+  max-height: 250px;
+}
+
+.Large__poster:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.Banner {
+  height: 448px;
+  color: #fff;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Banner__foreground__content {
+  margin-left: 35px;
+  padding-top: 107px;
+  height: 100px;
+}
+
+.Banner__foreground__content .Banner__title {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.Banner__foreground__content .Banner__btn {
+  padding: 1rem 2rem;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: transparent;
+  letter-spacing: .5px;
+  outline: none;
+  border: 1px solid #fff;
+  color: #E50914;
+  margin-top: 1.75rem;
+  margin-right: 1rem;
+  -webkit-transition: color .28s, background-color .28s;
+  transition: color .28s, background-color .28s;
+}
+
+.Banner__foreground__content .Banner__btn:hover {
+  background-color: #E50914;
+  color: #fff;
+}
+
+.Banner__foreground__content .Banner__btn:active {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.Banner__foreground__content .Banner__description {
+  width: 68.5rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  font-size: 19.54px;
+  margin-top: 1.75rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .Booster {
   text-align: center;
   margin-top: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */

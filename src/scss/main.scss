@@ -1,8 +1,11 @@
-@import './generic';
+@import "./generic";
+@import "./row";
+@import "./banner";
 
-.Booster{
-    text-align: center;
-    margin-top: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
+.Booster {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
 }
