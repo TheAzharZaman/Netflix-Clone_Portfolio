@@ -1,0 +1,42 @@
+.Nav__bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  padding: 15px;
+  transition: all 0.45s;
+  transition-timing-function: ease-in;
+}
+
+.Netflix__logo {
+  width: 76px;
+  object-fit: contain;
+}
+
+.User__avatar {
+  width: 52.5px;
+  margin-top: -0.35rem;
+  margin-right: 1.2rem;
+  object-fit: contain;
+  transition: transform 0.25s;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.Theme__adjustor {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  transition: color 0.2s cursor 0.2s;
+  position: fixed;
+  right: 11.5rem;
+  top: 3rem;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}

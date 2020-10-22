@@ -1,0 +1,23 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;  
+   font-family: 'Inter', sans-serif;
+}
+
+@mixin flex ($content, $direction) {
+    display: flex;
+    justify-content: $content;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.cursor{
+    cursor: pointer;
+}
+

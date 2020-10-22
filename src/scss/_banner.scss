@@ -1,0 +1,58 @@
+.Banner {
+  height: 460px;
+  object-fit: contain;
+}
+
+.Banner__foreground__content {
+  padding-top: 117.5px;
+  height: 500px;
+
+  .Banner__title {
+    font-weight: 38px;
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-left: 38px;
+  }
+
+  .Banner__btns__wrapper {
+    margin-left: 35px;
+  }
+
+  .Banner__btn {
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: 0.75px solid #fff;
+
+    margin-top: 1.75rem;
+    margin-right: 1rem;
+    transition: color 0.28s, background-color 0.28s;
+
+    &:active {
+      transform: scale(1.02);
+    }
+  }
+
+  .Banner__description {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 16.5px;
+    margin-top: 1.5rem;
+    max-width: 400px;
+    width: 68.5rem;
+    height: 80px;
+    margin-left: 35px;
+  }
+}
+
+.Banner__fade__bottom {
+  height: 15rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
