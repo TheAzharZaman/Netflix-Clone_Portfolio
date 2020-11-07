@@ -1,4 +1,4 @@
-.Nav__bar {
+.navBar {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -10,12 +10,12 @@
   transition-timing-function: ease-in;
 }
 
-.Netflix__logo {
+.netflix__logo {
   width: 76px;
   object-fit: contain;
 }
 
-.User__avatar {
+.user__avatar {
   width: 52.5px;
   margin-top: -0.35rem;
   margin-right: 1.2rem;
@@ -27,16 +27,18 @@
   }
 }
 
-.Theme__adjustor {
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.95);
-  cursor: pointer;
-  transition: color 0.2s cursor 0.2s;
-  position: fixed;
-  right: 11.5rem;
-  top: 3rem;
+// Pending
 
-  &:hover {
-    color: rgba(255, 255, 255, 0.85);
-  }
-}
+// .Theme__adjustor {
+//   font-size: 30px;
+//   color: rgba(255, 255, 255, 0.95);
+//   cursor: pointer;
+//   transition: color 0.2s cursor 0.2s;
+//   position: fixed;
+//   right: 11.5rem;
+//   top: 3rem;
+
+//   &:hover {
+//     color: rgba(255, 255, 255, 0.85);
+//   }
+// }

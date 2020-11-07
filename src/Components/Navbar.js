@@ -1,51 +1,67 @@
-import React, {useEffect, useState} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAdjust, faSun } from '@fortawesome/free-solid-svg-icons'
-
+import React, { useEffect, useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";  // Theme Switcher Pending
+// import { faAdjust, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const [show, handleShow] = useState(false);
 
-    const [show, handleShow] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if( window.scrollY > 100 ){
-              handleShow(true);   
-            } else handleShow(false);     
-            
-            return () => {
-                window.removeEventListener('scroll')
-            }
-        })
-        
-        // Nav__switcher ////
+      return () => {
+        window.removeEventListener("scroll");
+      };
+    });
+  });
 
-        let Theme__controller= document.getElementById('Theme__adjustor');
-        let App__main__container= document.getElementById('App-Main-UI-Container')
-        let Remove__Banner__Bottom__Fade= document.getElementById('Banner__fade__bottom')
-        let Row__bg__changer= document.getElementById('Row__posters__container')
-        
-        Theme__controller.addEventListener('click', () => {
-            console.log('Theme__Switcher Triggered')
-            Remove__Banner__Bottom__Fade.classList.toggle('Banner__fade__bottom')
-            App__main__container.classList.toggle('App-Main-UI-Container')
-            Row__bg__changer.classList.add('Row__bg__changer')
-        })
-    })
+  // {/*Nav__switcher*/}
 
-    return (
-        <div className={`Nav__bar ${show && "Nav__black"}`} id='Nav'>
-            <img className={`Netflix__logo`} src="https://i.ibb.co/52KLQyp/toppng-com-netflix-logo-icon-400x300.png" alt="NETFLIX-LOGO" border="0"></img>
+  //   useEffect(() => {
+  //     let themeController = document.getElementById("Theme__adjustor");
+  //     let appMainContainer = document.getElementById("app__mainContainer");
+  //     let removeBannerBottomFade = document.getElementById(
+  //       "Banner__fade__bottom"
+  //     );
+  //     let rowBgChanger = document.getElementById("row__postersContainer");
 
-            <div className='Navbar__icons_container'>
-                <FontAwesomeIcon className='Theme__adjustor pointer' id='Theme__adjustor' icon= { faSun } /> 
-            </div>
+  //     themeController.addEventListener("click", () => {
+  //       console.log("Theme__Switcher Triggered");
+  //       removeBannerBottomFade.classList.toggle("Banner__fade__bottom");
+  //       appMainContainer.classList.toggle("app__mainContainer");
+  //       rowBgChanger.classList.add("Row__bg__changer");
+  //     });
+  //   }, []);
 
-            <img className='User__avatar' src="https://i.ibb.co/sVB3zrK/avatar-icon-images-4.png" alt="User-Avatar" border="0"></img>
-        </div>
-    )
-}
+  return (
+    <div className={`navBar ${show && "navBlack"}`} id="nav">
+      <img
+        className={`netflix__logo`}
+        src="https://i.ibb.co/52KLQyp/toppng-com-netflix-logo-icon-400x300.png"
+        alt="NETFLIX-LOGO"
+        border="0"
+      ></img>
 
-//    
+      {/* Theme Switcher */}
 
-export default Navbar
+      {/* <div className="Navbar__icons_container">
+        <FontAwesomeIcon
+          className="Theme__adjustor pointer"
+          id="Theme__adjustor"
+          icon={faSun}
+        />
+      </div> */}
+
+      <img
+        className="user__avatar"
+        src="https://i.ibb.co/sVB3zrK/avatar-icon-images-4.png"
+        alt="User-Avatar"
+        border="0"
+      ></img>
+    </div>
+  );
+};
+
+export default Navbar;

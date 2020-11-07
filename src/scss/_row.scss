@@ -1,4 +1,4 @@
-.Row__posters__container {
+.row__postersContainer {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -7,11 +7,11 @@
   margin-top: 0.7rem;
 }
 
-.Row__posters__container::-webkit-scrollbar {
+.row__postersContainer::-webkit-scrollbar {
   display: none;
 }
 
-.Row-Title {
+.rowTitle {
   font-size: 25px;
   letter-spacing: 0.8px;
   margin-left: 1.5rem;
@@ -19,7 +19,7 @@
   margin-top: 0.5rem;
 }
 
-.Row__poster {
+.rowPoster {
   width: 100%;
   object-fit: contain;
   max-height: 110px;
@@ -31,7 +31,7 @@
   }
 }
 
-.Large__poster {
+.largePoster {
   max-height: 250px;
 
   &:hover {
@@ -41,6 +41,6 @@
 
 // Row Allignments /////
 
-#Row__netflix__originals {
+#row__netflixOriginals {
   margin-top: 1.65rem;
 }

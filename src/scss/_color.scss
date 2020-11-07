@@ -1,27 +1,27 @@
-.App-Main-UI-Container {
+.app__mainContainer {
   background-color: #111;
   // background-color: rgb(238, 238, 238);
 }
 
-.Nav__bar {
+.navBar {
   background-color: transparent;
 }
 
-.Nav__black {
+.navBlack {
   background-color: #111;
 }
 
 // Banner ////////
 
-.Banner {
+.banner {
   color: #fff;
 }
 
-.Banner__title {
+.bannerTitle {
   color: rgba(255, 255, 255, 0.95);
 }
 
-.Banner__btn {
+.bannerBtn {
   color: rgba(255, 255, 255, 0.95);
   background-color: rgba($color: #000000, $alpha: 0.35);
 
@@ -31,12 +31,12 @@
   }
 }
 
-.Banner__description {
+.bannerDescription {
   color: rgba(255, 255, 255, 0.9);
 }
 
 // Row ////
 
-.Row-Title {
+.rowTitle {
   color: rgba(255, 255, 255, 0.91);
 }
