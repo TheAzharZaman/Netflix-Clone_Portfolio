@@ -4,6 +4,7 @@ import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
 import requests from "./Files/requests";
 import FAQs from "./Components/FAQs";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -58,10 +59,9 @@ function App() {
           fetchURL={requests.fetchAncient}
         />
       </div>
-      <div className="sectionSeperator">
-        <h1>h</h1>
-      </div>
+      <div className="sectionSeperator"></div>
       <FAQs />
+      <Footer />
     </div>
   );
 }

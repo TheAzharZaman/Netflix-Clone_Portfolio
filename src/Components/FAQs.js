@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import Newsletter from "./Newsletter";
 
 const FAQs = () => {
   let [openFirstFAQ, setOpenFirstFAQ] = React.useState(false);
@@ -10,7 +11,7 @@ const FAQs = () => {
   let [openFifthFAQ, setOpenFifthFAQ] = React.useState(false);
 
   return (
-    <div className="faqsSection">
+    <div className="faqsSection" id="faqsSection">
       <h2 className="faqsHeading">Frequently Asked Questions</h2>
       <div className="faqs">
         {/* FAQ 1 */}
@@ -138,6 +139,7 @@ const FAQs = () => {
           ) : null}
         </div>
       </div>
+      <Newsletter />
     </div>
   );
 };

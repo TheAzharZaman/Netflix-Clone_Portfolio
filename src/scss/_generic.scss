@@ -1,23 +1,49 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   outline: none;  
-   font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  user-select: none;
 }
 
-@mixin flex ($content, $direction) {
-    display: flex;
-    justify-content: $content;
-    flex-direction: $direction;
-    align-items: center;
+@mixin flex($content, $direction) {
+  display: flex;
+  justify-content: $content;
+  flex-direction: $direction;
+  align-items: center;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-.cursor{
-    cursor: pointer;
+img {
+  object-fit: contain;
 }
 
+a {
+  text-decoration: none;
+}
+
+.flexrow {
+  display: flex;
+  flex-flow: row;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-flow: column;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.pointer {
+  cursor: pointer;
+}
