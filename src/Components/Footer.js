@@ -82,9 +82,9 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <CopyrightSection />
+      // <CopyrightSection />
       <div className="btm">
-        <h3>Hellllllllllllllllllllllllo</h3>
+        <h3>e</h3>
       </div>
     </div>
   );
